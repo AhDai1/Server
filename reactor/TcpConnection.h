@@ -29,7 +29,7 @@ class Socket;
 class TcpConnection : boost::noncopyable,
                       public boost::enable_shared_from_this<TcpConnection>
 {
- public:
+public:
   /// Constructs a TcpConnection with a connected sockfd
   ///
   /// User should not create this object.
@@ -52,16 +52,21 @@ class TcpConnection : boost::noncopyable,
   void setMessageCallback(const MessageCallback& cb)
   { messageCallback_ = cb; }
 
+    void setCloseCallback(const CloseCallback& cb )
+    { closeCallback_ = cb;}
   /// Internal use only.
 
   // called when TcpServer accepts a new connection
   void connectEstablished();   // should be called only once
-
+    void connectDestroyed();
  private:
-  enum StateE { kConnecting, kConnected, };
+  enum StateE { kConnecting, kConnected,kDisconnected };
 
   void setState(StateE s) { state_ = s; }
   void handleRead();
+  void handleWrite();
+  void handleClose();
+  void handleError();
 
   EventLoop* loop_;
   std::string name_;
@@ -73,6 +78,7 @@ class TcpConnection : boost::noncopyable,
   InetAddress peerAddr_;
   ConnectionCallback connectionCallback_;
   MessageCallback messageCallback_;
+  CloseCallback closeCallback_;
 };
 
 typedef boost::shared_ptr<TcpConnection> TcpConnectionPtr;

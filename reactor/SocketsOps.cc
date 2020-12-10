@@ -6,6 +6,7 @@
 #include<unistd.h>
 #include<boost/implicit_cast.hpp>
 #include<stdlib.h>
+#include<errno.h>
 template<typename To, typename From>
 inline To implicit_cast(From const &f) {
     return f;
@@ -90,4 +91,18 @@ struct sockaddr_in sockets::getLocalAddr(int sockfd)
     exit(0);
   }
   return localaddr;
+}
+int sockets::getSocketError(int sockfd)
+{
+  int optval;
+  socklen_t optlen = sizeof optval;
+
+  if (::getsockopt(sockfd, SOL_SOCKET, SO_ERROR, &optval, &optlen) < 0)
+  {
+    return errno;
+  }
+  else
+  {
+    return optval;
+  }
 }

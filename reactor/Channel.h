@@ -10,6 +10,7 @@ class Channel:boost::noncopyable
 public:
     typedef boost::function<void()> EventCallback;
     Channel(EventLoop* loop,int fd);
+    ~Channel();
     void handleEvent();
     void setReadCallback(const EventCallback& cb)
     { readCallback_ = cb;}
@@ -17,6 +18,8 @@ public:
     { writeCallback_ = cb;}
     void setErrorCallback(const EventCallback& cb)
     { errCallback_ = cb;}
+    void setCloseCallback(const EventCallback& cb)
+    {closeCallback_ = cb;}
 
     int fd() const { return fd_; }
      int events() const { return events_; }
@@ -24,6 +27,8 @@ public:
     bool isNoneEvent() const { return events_ == kNoneEvent; }
 
     void enableReading() { events_ |= kReadEvent; update(); }
+
+    void disableAll(){ events_ = kNoneEvent; update();}
 
       int index() { return index_; }
      void set_index(int idx) { index_ = idx; }
@@ -43,9 +48,11 @@ private:
     int revents_;
     int index_;
 
+    bool eventHanding_;
     EventCallback readCallback_;
     EventCallback writeCallback_;
     EventCallback errCallback_;
+    EventCallback closeCallback_;
 };
 
 #endif // !CHANNEL_H

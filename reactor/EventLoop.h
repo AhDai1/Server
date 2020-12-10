@@ -39,10 +39,12 @@ public:
 
     void updateChannel(Channel* channel);
     void wakeup();
-    
+    void removeChannel(Channel* channel);
+
 
 private:
     void abortNotInLoopThread();
+
     bool looping_;
     const pid_t threadId_;
     typedef std::vector<Channel*> ChannelList;

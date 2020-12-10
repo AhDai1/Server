@@ -20,6 +20,7 @@ public:
     ~Poller();
     Timestamp poll(int timeoutms, ChannelList* activeChannels);
     void updateChannel(Channel* channel);
+    void removeChannel(Channel* channel);
     void assertInLoopThread() { ownerLoop_->assertInLoopThread(); }
 private:
     void fillActiveChannels(int numEvents,ChannelList* activeChannels) const;
