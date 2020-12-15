@@ -10,6 +10,7 @@
 
 #include "Callbacks.h"
 #include "InetAddress.h"
+#include "Buffer.h"
 
 #include <boost/any.hpp>
 #include <boost/enable_shared_from_this.hpp>
@@ -46,6 +47,12 @@ public:
   const InetAddress& peerAddress() { return peerAddr_; }
   bool connected() const { return state_ == kConnected; }
 
+  void send(const void* message,size_t len);
+  void send(const std::string& message);
+  void shutdown();
+
+void setTcpNoDelay(bool on);
+
   void setConnectionCallback(const ConnectionCallback& cb)
   { connectionCallback_ = cb; }
 
@@ -60,13 +67,16 @@ public:
   void connectEstablished();   // should be called only once
     void connectDestroyed();
  private:
-  enum StateE { kConnecting, kConnected,kDisconnected };
+  enum StateE { kConnecting, kConnected,kDisconnecting,kDisconnected };
 
   void setState(StateE s) { state_ = s; }
-  void handleRead();
+  void handleRead(Timestamp receiveTime);
   void handleWrite();
   void handleClose();
   void handleError();
+
+  void sendInloop(const std::string& message);
+  void shutdownInloop();
 
   EventLoop* loop_;
   std::string name_;
@@ -79,6 +89,9 @@ public:
   ConnectionCallback connectionCallback_;
   MessageCallback messageCallback_;
   CloseCallback closeCallback_;
+
+  Buffer inputBuffer_;
+  Buffer outputBuffer_;
 };
 
 typedef boost::shared_ptr<TcpConnection> TcpConnectionPtr;

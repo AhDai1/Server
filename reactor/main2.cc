@@ -4,18 +4,19 @@
 #include"Channel.h"
 #include<sys/timerfd.h>
 EventLoop *g_loop;
-void func()
+void timeout(Timestamp receiveTime)
 {
-    std::cout<<"func()"<<std::endl;
+    printf("%s Timeout!\n", receiveTime.toFormattedString().c_str());
     g_loop->quit();
 }
 int main()
 {
+    printf("%s started\n", Timestamp::now().toFormattedString().c_str());
     EventLoop loop;
     g_loop = &loop;
     int timefd = ::timerfd_create(CLOCK_MONOTONIC,TFD_NONBLOCK | TFD_CLOEXEC);
     Channel channel(&loop,timefd);
-    channel.setReadCallback(func);
+    channel.setReadCallback(timeout);
     channel.enableReading();
     struct itimerspec howlong;
     bzero(&howlong,sizeof(howlong));

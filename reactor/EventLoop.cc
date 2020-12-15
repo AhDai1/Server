@@ -5,7 +5,8 @@
 #include<boost/bind.hpp>
 #include"Poll.h"
 #include"Channel.h"
-//class Channel;
+#include<signal.h>
+
 
 __thread EventLoop* t_loopInThisThread = 0;
 const int kPollTimeMs = 10000;
@@ -19,6 +20,16 @@ static int createEventfd()
     }
     return evtfd;
 }
+class IgnoreSigPipe
+{
+ public:
+  IgnoreSigPipe()
+  {
+    ::signal(SIGPIPE, SIG_IGN);
+  }
+};
+
+IgnoreSigPipe initObj;
 EventLoop::EventLoop():looping_(false),
 threadId_(CurrentThread::tid()),
 quit_(false),
@@ -51,9 +62,9 @@ void EventLoop::loop()
     while(!quit_)
     {
         activeChannels_.clear();
-        poller_->poll(kPollTimeMs,&activeChannels_);
+        pollReturnTime_=poller_->poll(kPollTimeMs,&activeChannels_);
         for(ChannelList::iterator it = activeChannels_.begin();it != activeChannels_.end();it++){
-            (*it)->handleEvent();
+            (*it)->handleEvent(pollReturnTime_);
         }
         doPendingFunctors();
     }

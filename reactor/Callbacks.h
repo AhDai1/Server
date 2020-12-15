@@ -12,7 +12,7 @@
 #include <boost/shared_ptr.hpp>
 
 #include "Timestamp.h"
-
+#include"Buffer.h"
 
 
 
@@ -24,7 +24,7 @@ typedef boost::function<void()> TimerCallback;
 
 
 typedef boost::function<void (const TcpConnectionPtr&)> ConnectionCallback;
-typedef boost::function<void (const TcpConnectionPtr&,const char* data,ssize_t len)> MessageCallback;
+typedef boost::function<void (const TcpConnectionPtr&,Buffer *buf, Timestamp)> MessageCallback;
 typedef boost::function<void (const TcpConnectionPtr&)> CloseCallback;
 
 

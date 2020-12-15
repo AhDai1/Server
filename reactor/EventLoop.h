@@ -50,6 +50,7 @@ private:
     typedef std::vector<Channel*> ChannelList;
     bool   quit_;
     bool callingPendingFunctors_;
+    Timestamp pollReturnTime_;
     boost::scoped_ptr<Poller> poller_;
     ChannelList activeChannels_;
     boost::scoped_ptr<TimerQueue> timerQueue_;
