@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ahdai/Server/thread/Atomic.h
+boost/noncopyable.hpp
+-
+stdint.h
+-
+
+/home/ahdai/Server/thread/Thread.cc
+Thread.h
+/home/ahdai/Server/thread/Thread.h
+boost/weak_ptr.hpp
+-
+unistd.h
+-
+sys/prctl.h
+-
+sys/syscall.h
+-
+sys/types.h
+-
+linux/unistd.h
+-
+
+/home/ahdai/Server/thread/Thread.h
+Atomic.h
+/home/ahdai/Server/thread/Atomic.h
+boost/function.hpp
+-
+boost/noncopyable.hpp
+-
+boost/shared_ptr.hpp
+-
+pthread.h
+-
+

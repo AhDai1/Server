@@ -6,6 +6,7 @@
 #include"Poll.h"
 #include"Channel.h"
 #include<signal.h>
+#include<stdio.h>
 
 
 __thread EventLoop* t_loopInThisThread = 0;

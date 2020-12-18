@@ -59,6 +59,8 @@ void setTcpNoDelay(bool on);
   void setMessageCallback(const MessageCallback& cb)
   { messageCallback_ = cb; }
 
+  void setWriteCompleteCallback(const WriteCompleteCallback& cb)
+  { writeCompleteCallback_ = cb; }
     void setCloseCallback(const CloseCallback& cb )
     { closeCallback_ = cb;}
   /// Internal use only.
@@ -89,6 +91,7 @@ void setTcpNoDelay(bool on);
   ConnectionCallback connectionCallback_;
   MessageCallback messageCallback_;
   CloseCallback closeCallback_;
+  WriteCompleteCallback writeCompleteCallback_;
 
   Buffer inputBuffer_;
   Buffer outputBuffer_;

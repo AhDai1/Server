@@ -26,6 +26,7 @@ typedef boost::function<void()> TimerCallback;
 typedef boost::function<void (const TcpConnectionPtr&)> ConnectionCallback;
 typedef boost::function<void (const TcpConnectionPtr&,Buffer *buf, Timestamp)> MessageCallback;
 typedef boost::function<void (const TcpConnectionPtr&)> CloseCallback;
+typedef boost::function<void (const TcpConnectionPtr&)> WriteCompleteCallback;
 
 
 #endif  // CALLBACKS_H
