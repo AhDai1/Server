@@ -14,7 +14,7 @@ set(TOP_DIR ${CMAKE_CURRENT_LIST_DIR}/../)
 add_subdirectory(${TOP_DIR}/reactor reactor_binary_dir)
 add_subdirectory(${TOP_DIR}/thread thread_binary_dir)
 
-add_executable(${PROJECT_NAME} main9.cc)
+add_executable(${PROJECT_NAME} main11.cc)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Reactor)
 target_link_libraries(${PROJECT_NAME} PRIVATE Thread)

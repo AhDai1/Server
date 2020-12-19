@@ -1,6 +1,7 @@
 #include"EventLoopThread.h"
 #include"EventLoop.h"
 #include<boost/bind.hpp>
+#include<assert.h>
 
 EventLoopThread::EventLoopThread():
 loop_(NULL),

@@ -4,6 +4,7 @@
 #include<strings.h>
 #include<netinet/in.h>
 #include<boost/static_assert.hpp>
+#include<assert.h>
 
 static const in_addr_t kInaddrAny = INADDR_ANY;
 BOOST_STATIC_ASSERT(sizeof(InetAddress) == sizeof(struct sockaddr_in));

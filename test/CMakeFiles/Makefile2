@@ -60,40 +60,40 @@ CMAKE_SOURCE_DIR = /home/ahdai/Server/test
 CMAKE_BINARY_DIR = /home/ahdai/Server/test
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/Test.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all: reactor_binary_dir/CMakeFiles/Reactor.dir/all
-CMakeFiles/test.dir/all: thread_binary_dir/CMakeFiles/Thread.dir/all
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=18 "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+CMakeFiles/Test.dir/all: reactor_binary_dir/CMakeFiles/Reactor.dir/all
+CMakeFiles/Test.dir/all: thread_binary_dir/CMakeFiles/Thread.dir/all
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/depend
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=17,18 "Built target Test"
+.PHONY : CMakeFiles/Test.dir/all
 
 # Include target in all.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/Test.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahdai/Server/test/CMakeFiles 18
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+CMakeFiles/Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahdai/Server/test/CMakeFiles 20
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahdai/Server/test/CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/Test.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
+Test: CMakeFiles/Test.dir/rule
 
-.PHONY : test
-
-# clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+.PHONY : Test
 
 # clean rule for target.
-clean: CMakeFiles/test.dir/clean
+CMakeFiles/Test.dir/clean:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/clean
+.PHONY : CMakeFiles/Test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Test.dir/clean
 
 .PHONY : clean
 
@@ -122,7 +122,7 @@ reactor_binary_dir/preinstall:
 reactor_binary_dir/CMakeFiles/Reactor.dir/all:
 	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/depend
 	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target Reactor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target Reactor"
 .PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/all
 
 # Include target in all.
@@ -132,7 +132,7 @@ all: reactor_binary_dir/CMakeFiles/Reactor.dir/all
 
 # Build rule for subdir invocation for target.
 reactor_binary_dir/CMakeFiles/Reactor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahdai/Server/test/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahdai/Server/test/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 reactor_binary_dir/CMakeFiles/Reactor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahdai/Server/test/CMakeFiles 0
 .PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/rule
@@ -177,7 +177,7 @@ thread_binary_dir/preinstall:
 thread_binary_dir/CMakeFiles/Thread.dir/all:
 	$(MAKE) -f thread_binary_dir/CMakeFiles/Thread.dir/build.make thread_binary_dir/CMakeFiles/Thread.dir/depend
 	$(MAKE) -f thread_binary_dir/CMakeFiles/Thread.dir/build.make thread_binary_dir/CMakeFiles/Thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=16,17 "Built target Thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=19,20 "Built target Thread"
 .PHONY : thread_binary_dir/CMakeFiles/Thread.dir/all
 
 # Include target in all.

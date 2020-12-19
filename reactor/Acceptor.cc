@@ -4,6 +4,8 @@
 #include"SocketsOps.h"
 #include"Channel.h"
 #include<boost/bind.hpp>
+#include<assert.h>
+
 Acceptor::Acceptor(EventLoop* loop,const InetAddress& listenAddr):
 loop_(loop),
 acceptSocket_(sockets::createNonblockingOrDie()),

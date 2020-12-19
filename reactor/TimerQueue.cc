@@ -15,7 +15,7 @@
 #include <boost/bind.hpp>
 
 #include <sys/timerfd.h>
-
+#include<assert.h>
 
 namespace detail
 {

@@ -34,7 +34,7 @@ private:
     EventLoop* loop_;
     const std::string name_;
     boost::scoped_ptr<Acceptor> acceptor_;
-    //boost::scoped_ptr<EventLoopThreadPool> threadPool_;
+    boost::scoped_ptr<EventLoopThreadPool> threadPool_;
     ConnectionCallback connectionCallback_;
     MessageCallback messageCallback_;
     WriteCompleteCallback writeCompleteCallback_;

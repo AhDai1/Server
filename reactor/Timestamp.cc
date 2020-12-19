@@ -8,7 +8,7 @@
 
 #include <boost/static_assert.hpp>
 
-
+#include<assert.h>
 BOOST_STATIC_ASSERT(sizeof(Timestamp) == sizeof(int64_t));
 
 Timestamp::Timestamp()

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Reactor.dir/Channel.cc.o"
   "CMakeFiles/Reactor.dir/EventLoop.cc.o"
   "CMakeFiles/Reactor.dir/EventLoopThread.cc.o"
+  "CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o"
   "CMakeFiles/Reactor.dir/InetAddress.cc.o"
   "CMakeFiles/Reactor.dir/Poll.cc.o"
   "CMakeFiles/Reactor.dir/Socket.cc.o"

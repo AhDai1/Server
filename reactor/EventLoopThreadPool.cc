@@ -6,7 +6,7 @@
 #include "EventLoopThread.h"
 
 #include <boost/bind.hpp>
-
+#include<assert.h>
 
 EventLoopThreadPool::EventLoopThreadPool(EventLoop* baseLoop)
   : baseLoop_(baseLoop),

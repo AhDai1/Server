@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named Test
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+Test/fast:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
 
 #=============================================================================
 # Target rules for targets named Reactor
@@ -149,6 +149,33 @@ Thread/fast:
 	$(MAKE) -f thread_binary_dir/CMakeFiles/Thread.dir/build.make thread_binary_dir/CMakeFiles/Thread.dir/build
 .PHONY : Thread/fast
 
+main11.o: main11.cc.o
+
+.PHONY : main11.o
+
+# target to build an object file
+main11.cc.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.o
+.PHONY : main11.cc.o
+
+main11.i: main11.cc.i
+
+.PHONY : main11.i
+
+# target to preprocess a source file
+main11.cc.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.i
+.PHONY : main11.cc.i
+
+main11.s: main11.cc.s
+
+.PHONY : main11.s
+
+# target to generate assembly for a file
+main11.cc.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.s
+.PHONY : main11.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -156,10 +183,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... Test"
 	@echo "... edit_cache"
 	@echo "... Reactor"
 	@echo "... Thread"
+	@echo "... main11.o"
+	@echo "... main11.i"
+	@echo "... main11.s"
 .PHONY : help
 
 

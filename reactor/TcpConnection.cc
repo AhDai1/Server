@@ -8,6 +8,7 @@
 #include<errno.h>
 #include<stdio.h>
 #include<stdlib.h>
+#include<assert.h>
 template<typename To, typename From>
 inline To implicit_cast(From const &f) {
     return f;
