@@ -112,3 +112,7 @@ int sockets::getSocketError(int sockfd)
     return optval;
   }
 }
+ssize_t sockets::write(int sockfd, const void *buf, size_t count)
+{
+  return ::write(sockfd, buf, count);
+}

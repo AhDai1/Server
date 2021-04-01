@@ -149,32 +149,32 @@ Thread/fast:
 	$(MAKE) -f thread_binary_dir/CMakeFiles/Thread.dir/build.make thread_binary_dir/CMakeFiles/Thread.dir/build
 .PHONY : Thread/fast
 
-main11.o: main11.cc.o
+WebServer.o: WebServer.cc.o
 
-.PHONY : main11.o
+.PHONY : WebServer.o
 
 # target to build an object file
-main11.cc.o:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.o
-.PHONY : main11.cc.o
+WebServer.cc.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.o
+.PHONY : WebServer.cc.o
 
-main11.i: main11.cc.i
+WebServer.i: WebServer.cc.i
 
-.PHONY : main11.i
+.PHONY : WebServer.i
 
 # target to preprocess a source file
-main11.cc.i:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.i
-.PHONY : main11.cc.i
+WebServer.cc.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.i
+.PHONY : WebServer.cc.i
 
-main11.s: main11.cc.s
+WebServer.s: WebServer.cc.s
 
-.PHONY : main11.s
+.PHONY : WebServer.s
 
 # target to generate assembly for a file
-main11.cc.s:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.s
-.PHONY : main11.cc.s
+WebServer.cc.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.s
+.PHONY : WebServer.cc.s
 
 # Help Target
 help:
@@ -187,9 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... Reactor"
 	@echo "... Thread"
-	@echo "... main11.o"
-	@echo "... main11.i"
-	@echo "... main11.s"
+	@echo "... WebServer.o"
+	@echo "... WebServer.i"
+	@echo "... WebServer.s"
 .PHONY : help
 
 

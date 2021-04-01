@@ -57,38 +57,38 @@ include CMakeFiles/Test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Test.dir/flags.make
 
-CMakeFiles/Test.dir/main11.cc.o: CMakeFiles/Test.dir/flags.make
-CMakeFiles/Test.dir/main11.cc.o: main11.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/main11.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/main11.cc.o -c /home/ahdai/Server/test/main11.cc
+CMakeFiles/Test.dir/WebServer.cc.o: CMakeFiles/Test.dir/flags.make
+CMakeFiles/Test.dir/WebServer.cc.o: WebServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/WebServer.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/WebServer.cc.o -c /home/ahdai/Server/test/WebServer.cc
 
-CMakeFiles/Test.dir/main11.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/main11.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/test/main11.cc > CMakeFiles/Test.dir/main11.cc.i
+CMakeFiles/Test.dir/WebServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/WebServer.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/test/WebServer.cc > CMakeFiles/Test.dir/WebServer.cc.i
 
-CMakeFiles/Test.dir/main11.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/main11.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/test/main11.cc -o CMakeFiles/Test.dir/main11.cc.s
+CMakeFiles/Test.dir/WebServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/WebServer.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/test/WebServer.cc -o CMakeFiles/Test.dir/WebServer.cc.s
 
-CMakeFiles/Test.dir/main11.cc.o.requires:
+CMakeFiles/Test.dir/WebServer.cc.o.requires:
 
-.PHONY : CMakeFiles/Test.dir/main11.cc.o.requires
+.PHONY : CMakeFiles/Test.dir/WebServer.cc.o.requires
 
-CMakeFiles/Test.dir/main11.cc.o.provides: CMakeFiles/Test.dir/main11.cc.o.requires
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main11.cc.o.provides.build
-.PHONY : CMakeFiles/Test.dir/main11.cc.o.provides
+CMakeFiles/Test.dir/WebServer.cc.o.provides: CMakeFiles/Test.dir/WebServer.cc.o.requires
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.o.provides.build
+.PHONY : CMakeFiles/Test.dir/WebServer.cc.o.provides
 
-CMakeFiles/Test.dir/main11.cc.o.provides.build: CMakeFiles/Test.dir/main11.cc.o
+CMakeFiles/Test.dir/WebServer.cc.o.provides.build: CMakeFiles/Test.dir/WebServer.cc.o
 
 
 # Object files for target Test
 Test_OBJECTS = \
-"CMakeFiles/Test.dir/main11.cc.o"
+"CMakeFiles/Test.dir/WebServer.cc.o"
 
 # External object files for target Test
 Test_EXTERNAL_OBJECTS =
 
-Test: CMakeFiles/Test.dir/main11.cc.o
+Test: CMakeFiles/Test.dir/WebServer.cc.o
 Test: CMakeFiles/Test.dir/build.make
 Test: reactor_binary_dir/libReactor.a
 Test: thread_binary_dir/libThread.a
@@ -101,7 +101,7 @@ CMakeFiles/Test.dir/build: Test
 
 .PHONY : CMakeFiles/Test.dir/build
 
-CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/main11.cc.o.requires
+CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/WebServer.cc.o.requires
 
 .PHONY : CMakeFiles/Test.dir/requires
 

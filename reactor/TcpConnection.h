@@ -17,7 +17,7 @@
 #include <boost/noncopyable.hpp>
 #include <boost/scoped_ptr.hpp>
 #include <boost/shared_ptr.hpp>
-
+#include"StringPiece.h"
 
 
 class Channel;
@@ -47,11 +47,12 @@ public:
   const InetAddress& peerAddress() { return peerAddr_; }
   bool connected() const { return state_ == kConnected; }
 
-  void send(const void* message,size_t len);
-  void send(const std::string& message);
+
   void shutdown();
 
 void setTcpNoDelay(bool on);
+  void setContext(const boost::any &context)
+  {context_ = context;}
 
   void setConnectionCallback(const ConnectionCallback& cb)
   { connectionCallback_ = cb; }
@@ -63,11 +64,22 @@ void setTcpNoDelay(bool on);
   { writeCompleteCallback_ = cb; }
     void setCloseCallback(const CloseCallback& cb )
     { closeCallback_ = cb;}
+  void setHighWaterMarkCallback(const HighWaterMarkCallback& cb, size_t highWaterMark)
+  { highWaterMarkCallback_ = cb; highWaterMark_ = highWaterMark; }
+  boost::any* getMutableContext()
+  { return &context_; }
   /// Internal use only.
 
   // called when TcpServer accepts a new connection
   void connectEstablished();   // should be called only once
     void connectDestroyed();
+     void send(const void* message, int len);
+  void send(const StringPiece& message);
+  // void send(Buffer&& message); // C++11
+  void send(Buffer* message);  // this one will swap data
+  // void send(const void* message,size_t len);
+  // void send(const std::string& message);
+  // void send(Buffer* buf);
  private:
   enum StateE { kConnecting, kConnected,kDisconnecting,kDisconnected };
 
@@ -77,7 +89,10 @@ void setTcpNoDelay(bool on);
   void handleClose();
   void handleError();
 
-  void sendInloop(const std::string& message);
+ 
+  //void sendInloop(const std::string& message);
+  void sendInLoop(const StringPiece& message);
+  void sendInLoop(const void* data, size_t len);
   void shutdownInloop();
 
   EventLoop* loop_;
@@ -92,9 +107,12 @@ void setTcpNoDelay(bool on);
   MessageCallback messageCallback_;
   CloseCallback closeCallback_;
   WriteCompleteCallback writeCompleteCallback_;
+  HighWaterMarkCallback highWaterMarkCallback_;
 
+  size_t highWaterMark_;
   Buffer inputBuffer_;
   Buffer outputBuffer_;
+  boost::any context_;
 };
 
 typedef boost::shared_ptr<TcpConnection> TcpConnectionPtr;

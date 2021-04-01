@@ -1,5 +1,6 @@
 #include"Util.h"
-
+namespace Util
+{
 string ConstructPath(const string &path)
 {
     string Webhome = "home/ahdai/Server";
@@ -53,4 +54,5 @@ string GetContent(const string &filename)
     ostringstream oss;
     oss << fin.rdbuf();
     return string(oss.str());
+}
 }

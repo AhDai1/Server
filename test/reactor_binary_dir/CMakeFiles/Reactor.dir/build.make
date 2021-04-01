@@ -201,9 +201,105 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o.provides: rea
 reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o
 
 
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o: /home/ahdai/Server/reactor/HttpContext.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/HttpContext.cc.o -c /home/ahdai/Server/reactor/HttpContext.cc
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reactor.dir/HttpContext.cc.i"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/reactor/HttpContext.cc > CMakeFiles/Reactor.dir/HttpContext.cc.i
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reactor.dir/HttpContext.cc.s"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/reactor/HttpContext.cc -o CMakeFiles/Reactor.dir/HttpContext.cc.s
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.requires:
+
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.requires
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.provides: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.requires
+	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.provides.build
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.provides
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o
+
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o: /home/ahdai/Server/reactor/HttpRequest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/HttpRequest.cc.o -c /home/ahdai/Server/reactor/HttpRequest.cc
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reactor.dir/HttpRequest.cc.i"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/reactor/HttpRequest.cc > CMakeFiles/Reactor.dir/HttpRequest.cc.i
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reactor.dir/HttpRequest.cc.s"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/reactor/HttpRequest.cc -o CMakeFiles/Reactor.dir/HttpRequest.cc.s
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.requires:
+
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.requires
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.provides: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.requires
+	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.provides.build
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.provides
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o
+
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o: /home/ahdai/Server/reactor/HttpResponse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/HttpResponse.cc.o -c /home/ahdai/Server/reactor/HttpResponse.cc
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reactor.dir/HttpResponse.cc.i"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/reactor/HttpResponse.cc > CMakeFiles/Reactor.dir/HttpResponse.cc.i
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reactor.dir/HttpResponse.cc.s"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/reactor/HttpResponse.cc -o CMakeFiles/Reactor.dir/HttpResponse.cc.s
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.requires:
+
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.requires
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.provides: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.requires
+	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.provides.build
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.provides
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o
+
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o: /home/ahdai/Server/reactor/HttpServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/HttpServer.cc.o -c /home/ahdai/Server/reactor/HttpServer.cc
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reactor.dir/HttpServer.cc.i"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/reactor/HttpServer.cc > CMakeFiles/Reactor.dir/HttpServer.cc.i
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reactor.dir/HttpServer.cc.s"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/reactor/HttpServer.cc -o CMakeFiles/Reactor.dir/HttpServer.cc.s
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.requires:
+
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.requires
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.provides: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.requires
+	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.provides.build
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.provides
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o
+
+
 reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o: /home/ahdai/Server/reactor/InetAddress.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/InetAddress.cc.o -c /home/ahdai/Server/reactor/InetAddress.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.i: cmake_force
@@ -227,7 +323,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o.provides.build: react
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o: /home/ahdai/Server/reactor/Poll.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/Poll.cc.o -c /home/ahdai/Server/reactor/Poll.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.i: cmake_force
@@ -251,7 +347,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o.provides.build: reactor_bina
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o: /home/ahdai/Server/reactor/Socket.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/Socket.cc.o -c /home/ahdai/Server/reactor/Socket.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.i: cmake_force
@@ -275,7 +371,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o.provides.build: reactor_bi
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/SocketsOps.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/SocketsOps.cc.o: /home/ahdai/Server/reactor/SocketsOps.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/SocketsOps.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/SocketsOps.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/SocketsOps.cc.o -c /home/ahdai/Server/reactor/SocketsOps.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/SocketsOps.cc.i: cmake_force
@@ -299,7 +395,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/SocketsOps.cc.o.provides.build: reacto
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/TcpConnection.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/TcpConnection.cc.o: /home/ahdai/Server/reactor/TcpConnection.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/TcpConnection.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/TcpConnection.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/TcpConnection.cc.o -c /home/ahdai/Server/reactor/TcpConnection.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/TcpConnection.cc.i: cmake_force
@@ -323,7 +419,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/TcpConnection.cc.o.provides.build: rea
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/TcpServer.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/TcpServer.cc.o: /home/ahdai/Server/reactor/TcpServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/TcpServer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/TcpServer.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/TcpServer.cc.o -c /home/ahdai/Server/reactor/TcpServer.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/TcpServer.cc.i: cmake_force
@@ -347,7 +443,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/TcpServer.cc.o.provides.build: reactor
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o: /home/ahdai/Server/reactor/Timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/Timer.cc.o -c /home/ahdai/Server/reactor/Timer.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.i: cmake_force
@@ -371,7 +467,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o.provides.build: reactor_bin
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o: /home/ahdai/Server/reactor/TimerQueue.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/TimerQueue.cc.o -c /home/ahdai/Server/reactor/TimerQueue.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.i: cmake_force
@@ -395,7 +491,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o.provides.build: reacto
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o: /home/ahdai/Server/reactor/Timestamp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o"
 	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/Timestamp.cc.o -c /home/ahdai/Server/reactor/Timestamp.cc
 
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.i: cmake_force
@@ -417,6 +513,30 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o.provides: reactor_binar
 reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o
 
 
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o: reactor_binary_dir/CMakeFiles/Reactor.dir/flags.make
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o: /home/ahdai/Server/reactor/Util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reactor.dir/Util.cc.o -c /home/ahdai/Server/reactor/Util.cc
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reactor.dir/Util.cc.i"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahdai/Server/reactor/Util.cc > CMakeFiles/Reactor.dir/Util.cc.i
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reactor.dir/Util.cc.s"
+	cd /home/ahdai/Server/test/reactor_binary_dir && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahdai/Server/reactor/Util.cc -o CMakeFiles/Reactor.dir/Util.cc.s
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.requires:
+
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.requires
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.provides: reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.requires
+	$(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.provides.build
+.PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.provides
+
+reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.provides.build: reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o
+
+
 # Object files for target Reactor
 Reactor_OBJECTS = \
 "CMakeFiles/Reactor.dir/Acceptor.cc.o" \
@@ -425,6 +545,10 @@ Reactor_OBJECTS = \
 "CMakeFiles/Reactor.dir/EventLoop.cc.o" \
 "CMakeFiles/Reactor.dir/EventLoopThread.cc.o" \
 "CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o" \
+"CMakeFiles/Reactor.dir/HttpContext.cc.o" \
+"CMakeFiles/Reactor.dir/HttpRequest.cc.o" \
+"CMakeFiles/Reactor.dir/HttpResponse.cc.o" \
+"CMakeFiles/Reactor.dir/HttpServer.cc.o" \
 "CMakeFiles/Reactor.dir/InetAddress.cc.o" \
 "CMakeFiles/Reactor.dir/Poll.cc.o" \
 "CMakeFiles/Reactor.dir/Socket.cc.o" \
@@ -433,7 +557,8 @@ Reactor_OBJECTS = \
 "CMakeFiles/Reactor.dir/TcpServer.cc.o" \
 "CMakeFiles/Reactor.dir/Timer.cc.o" \
 "CMakeFiles/Reactor.dir/TimerQueue.cc.o" \
-"CMakeFiles/Reactor.dir/Timestamp.cc.o"
+"CMakeFiles/Reactor.dir/Timestamp.cc.o" \
+"CMakeFiles/Reactor.dir/Util.cc.o"
 
 # External object files for target Reactor
 Reactor_EXTERNAL_OBJECTS =
@@ -444,6 +569,10 @@ reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/Chann
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoop.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThread.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o
+reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o
+reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o
+reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o
+reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o
@@ -453,9 +582,10 @@ reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/TcpSe
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o
+reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/build.make
 reactor_binary_dir/libReactor.a: reactor_binary_dir/CMakeFiles/Reactor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libReactor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahdai/Server/test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX static library libReactor.a"
 	cd /home/ahdai/Server/test/reactor_binary_dir && $(CMAKE_COMMAND) -P CMakeFiles/Reactor.dir/cmake_clean_target.cmake
 	cd /home/ahdai/Server/test/reactor_binary_dir && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Reactor.dir/link.txt --verbose=$(VERBOSE)
 
@@ -470,6 +600,10 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFile
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoop.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThread.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o.requires
+reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o.requires
+reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o.requires
+reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o.requires
+reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/InetAddress.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/Poll.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/Socket.cc.o.requires
@@ -479,6 +613,7 @@ reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFile
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/Timer.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/TimerQueue.cc.o.requires
 reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.o.requires
+reactor_binary_dir/CMakeFiles/Reactor.dir/requires: reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o.requires
 
 .PHONY : reactor_binary_dir/CMakeFiles/Reactor.dir/requires
 

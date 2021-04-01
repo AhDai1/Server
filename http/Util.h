@@ -6,11 +6,13 @@
 #include<fstream>
 #include <sstream>
 using namespace std;
+namespace Util
+{
 string ConstructPath(const string &path);
 string GetExtent(const string &path);
 void GetContentType(const string&, const string &);
 string GetContent(const string &);
 string GetImage(const string &);
-
+}
 
 #endif

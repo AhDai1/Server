@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <memory.h>
 #include <sys/uio.h>
-
+const char Buffer::kCRLF[] = "\r\n";
 template<typename To, typename From>
 inline To implicit_cast(From const &f) {
     return f;

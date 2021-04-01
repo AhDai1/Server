@@ -63,7 +63,9 @@ void HttpRequest::setReceiveTime(Timestamp t){
     receivetime_=t;
 }
 Timestamp HttpRequest::receiveTime() const{return receivetime_;}
-
+/**
+ * Parse the request header 
+**/
 void HttpRequest::addHeader(const char *start,const char *colon,const char *end){
     string field(start,colon);
     colon++;

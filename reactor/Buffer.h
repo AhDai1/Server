@@ -1,11 +1,11 @@
 #ifndef BUFFER_H
 #define BUFFER_H
-
+#include<iostream>
 #include<algorithm>
 #include <string>
 #include <vector>
 #include <assert.h>
-
+using namespace std;
 
 class Buffer
 {
@@ -55,13 +55,24 @@ public:
         writerIndex_ = kCheapPrepend;
     }
 
-    std::string retrieveAsString()
-    {
-        std::string str(peek(), readableBytes());
-        retrieveAll();
-        return str;
-    }
+    // std::string retrieveAsString()
+    // {
+    //     std::string str(peek(), readableBytes());
+    //     retrieveAll();
+    //     return str;
+    // }
+    string retrieveAllAsString()
+  {
+    return retrieveAsString(readableBytes());
+  }
 
+  string retrieveAsString(size_t len)
+  {
+    assert(len <= readableBytes());
+    string result(peek(), len);
+    retrieve(len);
+    return result;
+  }
     void append(const std::string& str)
     {
         append(str.data(), str.length());
@@ -112,6 +123,12 @@ public:
     buf.swap(buffer_);
     }
     ssize_t readFd(int fd, int* savedErrno);
+
+    const char* findCRLF() const
+    {
+    const char* crlf = std::search(peek(), beginWrite(), kCRLF, kCRLF+2);
+    return crlf == beginWrite() ? NULL : crlf;
+     }
 private:
 
     char* begin(){
@@ -139,7 +156,7 @@ private:
       assert(readable == readableBytes());
     }
   }
-
+    static const char kCRLF[];
     std::vector<char> buffer_;
     size_t readerIndex_;
     size_t writerIndex_;

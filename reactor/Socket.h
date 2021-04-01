@@ -15,6 +15,7 @@ public:
     void bindAddress(const InetAddress& localaddr);
     void listen();
     int accept(InetAddress* peeraddr);
+    void setKeepAlive(bool on);
     void setReuseAddr(bool on);
     void shutdownWrite();
     void setTcpNoDelay(bool on);
