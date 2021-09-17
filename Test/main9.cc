@@ -5,7 +5,7 @@
 
 void onConnection(const TcpConnectionPtr& conn)
 {
-  if (conn->connected())
+  if  (conn->connected())
   {
     printf("onConnection(): new connection [%s] from %s\n",
            conn->name().c_str(),
