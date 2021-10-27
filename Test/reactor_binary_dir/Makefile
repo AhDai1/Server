@@ -260,6 +260,141 @@ EventLoopThread.cc.s:
 	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThread.cc.s
 .PHONY : EventLoopThread.cc.s
 
+EventLoopThreadPool.o: EventLoopThreadPool.cc.o
+
+.PHONY : EventLoopThreadPool.o
+
+# target to build an object file
+EventLoopThreadPool.cc.o:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.o
+.PHONY : EventLoopThreadPool.cc.o
+
+EventLoopThreadPool.i: EventLoopThreadPool.cc.i
+
+.PHONY : EventLoopThreadPool.i
+
+# target to preprocess a source file
+EventLoopThreadPool.cc.i:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.i
+.PHONY : EventLoopThreadPool.cc.i
+
+EventLoopThreadPool.s: EventLoopThreadPool.cc.s
+
+.PHONY : EventLoopThreadPool.s
+
+# target to generate assembly for a file
+EventLoopThreadPool.cc.s:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/EventLoopThreadPool.cc.s
+.PHONY : EventLoopThreadPool.cc.s
+
+HttpContext.o: HttpContext.cc.o
+
+.PHONY : HttpContext.o
+
+# target to build an object file
+HttpContext.cc.o:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.o
+.PHONY : HttpContext.cc.o
+
+HttpContext.i: HttpContext.cc.i
+
+.PHONY : HttpContext.i
+
+# target to preprocess a source file
+HttpContext.cc.i:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.i
+.PHONY : HttpContext.cc.i
+
+HttpContext.s: HttpContext.cc.s
+
+.PHONY : HttpContext.s
+
+# target to generate assembly for a file
+HttpContext.cc.s:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpContext.cc.s
+.PHONY : HttpContext.cc.s
+
+HttpRequest.o: HttpRequest.cc.o
+
+.PHONY : HttpRequest.o
+
+# target to build an object file
+HttpRequest.cc.o:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.o
+.PHONY : HttpRequest.cc.o
+
+HttpRequest.i: HttpRequest.cc.i
+
+.PHONY : HttpRequest.i
+
+# target to preprocess a source file
+HttpRequest.cc.i:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.i
+.PHONY : HttpRequest.cc.i
+
+HttpRequest.s: HttpRequest.cc.s
+
+.PHONY : HttpRequest.s
+
+# target to generate assembly for a file
+HttpRequest.cc.s:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpRequest.cc.s
+.PHONY : HttpRequest.cc.s
+
+HttpResponse.o: HttpResponse.cc.o
+
+.PHONY : HttpResponse.o
+
+# target to build an object file
+HttpResponse.cc.o:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.o
+.PHONY : HttpResponse.cc.o
+
+HttpResponse.i: HttpResponse.cc.i
+
+.PHONY : HttpResponse.i
+
+# target to preprocess a source file
+HttpResponse.cc.i:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.i
+.PHONY : HttpResponse.cc.i
+
+HttpResponse.s: HttpResponse.cc.s
+
+.PHONY : HttpResponse.s
+
+# target to generate assembly for a file
+HttpResponse.cc.s:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpResponse.cc.s
+.PHONY : HttpResponse.cc.s
+
+HttpServer.o: HttpServer.cc.o
+
+.PHONY : HttpServer.o
+
+# target to build an object file
+HttpServer.cc.o:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.o
+.PHONY : HttpServer.cc.o
+
+HttpServer.i: HttpServer.cc.i
+
+.PHONY : HttpServer.i
+
+# target to preprocess a source file
+HttpServer.cc.i:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.i
+.PHONY : HttpServer.cc.i
+
+HttpServer.s: HttpServer.cc.s
+
+.PHONY : HttpServer.s
+
+# target to generate assembly for a file
+HttpServer.cc.s:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/HttpServer.cc.s
+.PHONY : HttpServer.cc.s
+
 InetAddress.o: InetAddress.cc.o
 
 .PHONY : InetAddress.o
@@ -503,6 +638,33 @@ Timestamp.cc.s:
 	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/Timestamp.cc.s
 .PHONY : Timestamp.cc.s
 
+Util.o: Util.cc.o
+
+.PHONY : Util.o
+
+# target to build an object file
+Util.cc.o:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.o
+.PHONY : Util.cc.o
+
+Util.i: Util.cc.i
+
+.PHONY : Util.i
+
+# target to preprocess a source file
+Util.cc.i:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.i
+.PHONY : Util.cc.i
+
+Util.s: Util.cc.s
+
+.PHONY : Util.s
+
+# target to generate assembly for a file
+Util.cc.s:
+	cd /home/ahdai/Server/Test && $(MAKE) -f reactor_binary_dir/CMakeFiles/Reactor.dir/build.make reactor_binary_dir/CMakeFiles/Reactor.dir/Util.cc.s
+.PHONY : Util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -527,6 +689,21 @@ help:
 	@echo "... EventLoopThread.o"
 	@echo "... EventLoopThread.i"
 	@echo "... EventLoopThread.s"
+	@echo "... EventLoopThreadPool.o"
+	@echo "... EventLoopThreadPool.i"
+	@echo "... EventLoopThreadPool.s"
+	@echo "... HttpContext.o"
+	@echo "... HttpContext.i"
+	@echo "... HttpContext.s"
+	@echo "... HttpRequest.o"
+	@echo "... HttpRequest.i"
+	@echo "... HttpRequest.s"
+	@echo "... HttpResponse.o"
+	@echo "... HttpResponse.i"
+	@echo "... HttpResponse.s"
+	@echo "... HttpServer.o"
+	@echo "... HttpServer.i"
+	@echo "... HttpServer.s"
 	@echo "... InetAddress.o"
 	@echo "... InetAddress.i"
 	@echo "... InetAddress.s"
@@ -554,6 +731,9 @@ help:
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"
+	@echo "... Util.o"
+	@echo "... Util.i"
+	@echo "... Util.s"
 .PHONY : help
 
 

@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic   -o test reactor_binary_dir/libReactor.a thread_binary_dir/libThread.a 
+/usr/bin/c++    -rdynamic CMakeFiles/test.dir/WebServer.cc.o  -o test reactor_binary_dir/libReactor.a thread_binary_dir/libThread.a http_binary_dir/libHttp.a -lpthread 

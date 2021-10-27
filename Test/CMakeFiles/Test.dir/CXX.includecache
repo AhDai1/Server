@@ -17,6 +17,8 @@ stdio.h
 -
 
 /home/ahdai/Server/reactor/Buffer.h
+iostream
+-
 algorithm
 -
 string
@@ -78,6 +80,14 @@ assert.h
 pthread.h
 -
 
+/home/ahdai/Server/reactor/StringPiece.h
+string.h
+-
+iosfwd
+-
+Types.h
+/home/ahdai/Server/reactor/Types.h
+
 /home/ahdai/Server/reactor/TcpConnection.h
 Callbacks.h
 /home/ahdai/Server/reactor/Callbacks.h
@@ -95,6 +105,8 @@ boost/scoped_ptr.hpp
 -
 boost/shared_ptr.hpp
 -
+StringPiece.h
+/home/ahdai/Server/reactor/StringPiece.h
 
 /home/ahdai/Server/reactor/TcpServer.h
 TcpConnection.h
@@ -140,6 +152,16 @@ Channel.h
 stdint.h
 -
 string
+-
+
+/home/ahdai/Server/reactor/Types.h
+stdint.h
+-
+string.h
+-
+string
+-
+assert.h
 -
 
 /home/ahdai/Server/thread/Atomic.h

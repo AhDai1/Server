@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Test
+# Target rules for targets named test
 
 # Build rule for target.
-Test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Test
-.PHONY : Test
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-Test/fast:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
-.PHONY : Test/fast
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 #=============================================================================
 # Target rules for targets named Reactor
@@ -149,13 +149,26 @@ Thread/fast:
 	$(MAKE) -f thread_binary_dir/CMakeFiles/Thread.dir/build.make thread_binary_dir/CMakeFiles/Thread.dir/build
 .PHONY : Thread/fast
 
+#=============================================================================
+# Target rules for targets named Http
+
+# Build rule for target.
+Http: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Http
+.PHONY : Http
+
+# fast build rule for target.
+Http/fast:
+	$(MAKE) -f http_binary_dir/CMakeFiles/Http.dir/build.make http_binary_dir/CMakeFiles/Http.dir/build
+.PHONY : Http/fast
+
 WebServer.o: WebServer.cc.o
 
 .PHONY : WebServer.o
 
 # target to build an object file
 WebServer.cc.o:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/WebServer.cc.o
 .PHONY : WebServer.cc.o
 
 WebServer.i: WebServer.cc.i
@@ -164,7 +177,7 @@ WebServer.i: WebServer.cc.i
 
 # target to preprocess a source file
 WebServer.cc.i:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/WebServer.cc.i
 .PHONY : WebServer.cc.i
 
 WebServer.s: WebServer.cc.s
@@ -173,7 +186,7 @@ WebServer.s: WebServer.cc.s
 
 # target to generate assembly for a file
 WebServer.cc.s:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/WebServer.cc.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/WebServer.cc.s
 .PHONY : WebServer.cc.s
 
 # Help Target
@@ -183,10 +196,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Test"
+	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... Reactor"
 	@echo "... Thread"
+	@echo "... Http"
 	@echo "... WebServer.o"
 	@echo "... WebServer.i"
 	@echo "... WebServer.s"

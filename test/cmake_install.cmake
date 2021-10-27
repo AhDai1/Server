@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ahdai/Server/test/reactor_binary_dir/cmake_install.cmake")
   include("/home/ahdai/Server/test/thread_binary_dir/cmake_install.cmake")
+  include("/home/ahdai/Server/test/http_binary_dir/cmake_install.cmake")
 
 endif()
 
