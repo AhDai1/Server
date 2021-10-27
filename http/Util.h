@@ -10,7 +10,7 @@ namespace Util
 {
 string ConstructPath(const string &path);
 string GetExtent(const string &path);
-void GetContentType(const string&, const string &);
+void GetContentType(const string &tmpExtension, string &contentType);
 string GetContent(const string &);
 string GetImage(const string &);
 }

@@ -3,7 +3,7 @@ namespace Util
 {
 string ConstructPath(const string &path)
 {
-    string Webhome = "home/ahdai/Server";
+    string Webhome = "/home/ahdai/Server/http";
     if(path == "/"){
         return Webhome + "/index.html";
     }
@@ -11,7 +11,7 @@ string ConstructPath(const string &path)
         return Webhome + path;
     }
 }
-string getExtent(const string &path)
+string GetExtent(const string &path)
 {
     int i;
     for(i=path.size()-1;;i--){
@@ -42,7 +42,7 @@ void GetContentType(const string &tmpExtension, string &contentType)
             }
         }
     }
-    contentType =  "text/plain";
+    contentType =  "text/html";
     mineFile.close();
 }
 string GetContent(const string &filename)
