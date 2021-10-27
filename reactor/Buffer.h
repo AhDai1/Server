@@ -55,12 +55,12 @@ public:
         writerIndex_ = kCheapPrepend;
     }
 
-    // std::string retrieveAsString()
-    // {
-    //     std::string str(peek(), readableBytes());
-    //     retrieveAll();
-    //     return str;
-    // }
+    std::string retrieveAsString()
+    {
+        std::string str(peek(), readableBytes());
+        retrieveAll();
+        return str;
+    }
     string retrieveAllAsString()
   {
     return retrieveAsString(readableBytes());
