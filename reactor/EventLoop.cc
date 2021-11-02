@@ -31,21 +31,21 @@ class IgnoreSigPipe
 };
 
 IgnoreSigPipe initObj;
-EventLoop::EventLoop():looping_(false),
-threadId_(CurrentThread::tid()),
+EventLoop::EventLoop():looping_(false),//事件循环是否开始
+threadId_(CurrentThread::tid()),//获取当前线程id
 quit_(false),
-poller_(new Poller(this)),
+poller_(new Poller(this)),//创建一个poll
 timerQueue_(new TimerQueue(this)),
-wakeupFd_(createEventfd()),
-wakeupChannel_(new Channel(this,wakeupFd_))
+wakeupFd_(createEventfd()),//创建了eventfd作为线程间等待、唤醒
+wakeupChannel_(new Channel(this,wakeupFd_))//创建wakeupChannel通道
 {
-    if(t_loopInThisThread){
+    if(t_loopInThisThread){//判断是否已有EventLoop
         perror("Another EventLoop");
         exit(1);
     }
     else
         t_loopInThisThread=this;
-    wakeupChannel_->setReadCallback(boost::bind(&EventLoop::handleRead,this));
+    wakeupChannel_->setReadCallback(boost::bind(&EventLoop::handleRead,this));//设定wakeupChannel的回调函数
     wakeupChannel_->enableReading();
 }
 EventLoop::~EventLoop()
@@ -57,17 +57,17 @@ EventLoop::~EventLoop()
 void EventLoop::loop()
 {
     assert(!looping_);
-    assertInLoopThread();
+    assertInLoopThread();//断言处于创建线程中
     looping_=true;
     quit_ = false;
     while(!quit_)
     {
         activeChannels_.clear();
-        pollReturnTime_=poller_->poll(kPollTimeMs,&activeChannels_);
+        pollReturnTime_=poller_->poll(kPollTimeMs,&activeChannels_);//调用poll返回活跃的事件，也有可能被唤醒
         for(ChannelList::iterator it = activeChannels_.begin();it != activeChannels_.end();it++){
-            (*it)->handleEvent(pollReturnTime_);
+            (*it)->handleEvent(pollReturnTime_);//遍历通道来唤醒
         }
-        doPendingFunctors();
+        doPendingFunctors();//处理用户回调函数
     }
     looping_ = false;
 }
@@ -115,7 +115,7 @@ void EventLoop::updateChannel(Channel* channel)
 {
     assert(channel->ownerLoop() == this);
     assertInLoopThread();
-    poller_->updateChannel(channel);
+    poller_->updateChannel(channel);//将Channel指针传给Poller
 }
 void EventLoop::removeChannel(Channel* channel)
 {

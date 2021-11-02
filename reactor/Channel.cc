@@ -6,7 +6,13 @@
 const int Channel::kNoneEvent = 0;
 const int Channel::kReadEvent = POLLIN | POLLPRI;
 const int Channel::kWriteEvent = POLLOUT;
-Channel::Channel(EventLoop* loop,int fdArg):loop_(loop),fd_(fdArg),events_(0),revents_(0),index_(-1),eventHanding_(false)
+Channel::Channel(EventLoop* loop,int fdArg):
+loop_(loop),//保存EventLoop的指针
+fd_(fdArg),//描述符
+events_(0),//用户关心的事件
+revents_(0),//实际发生的事件
+index_(-1),//记录当前fd在pollfd的位置
+eventHanding_(false)
 {
 
 }
@@ -16,7 +22,7 @@ Channel::~Channel()
 }
 void Channel::update()
 {
-    loop_->updateChannel(this);
+    loop_->updateChannel(this);//将指针传到了EventLoop
 }
 void Channel::handleEvent(Timestamp receiveTime)
 {

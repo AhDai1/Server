@@ -14,10 +14,10 @@ Poller::~Poller()
 }
 Timestamp Poller::poll(int timeoutms, ChannelList* activeChannels)
 {
-    int numEvents = ::poll(&*pollfds_.begin(),pollfds_.size(),timeoutms);
+    int numEvents = ::poll(&*pollfds_.begin(),pollfds_.size(),timeoutms);//poll调用
     Timestamp now(Timestamp::now());
     if(numEvents>0){
-        fillActiveChannels(numEvents,activeChannels);
+        fillActiveChannels(numEvents,activeChannels);//填充活跃的事件Channel
     }
     else if(numEvents ==0){
 
@@ -25,7 +25,7 @@ Timestamp Poller::poll(int timeoutms, ChannelList* activeChannels)
     else if(numEvents<0){
         perror("Poller::poll()");
     }
-    return now;
+    return now;//返回poll的return时间
 }
 void Poller::fillActiveChannels(int numEvents, ChannelList* activeChannels) const
 {
@@ -46,14 +46,15 @@ void Poller::updateChannel(Channel* channel)
     assertInLoopThread();
     if(channel->index()<0){//new one
         assert(channels_.find(channel->fd()) == channels_.end());
-        struct pollfd pfd;
+        struct pollfd pfd;//pollfd结构体
         pfd.fd = channel->fd();
         pfd.events = static_cast<short>(channel->events());
         pfd.revents =0;
+        //pollfds_是pollfd类型的vector，充当poll的第一个参数
         pollfds_.push_back(pfd);
-        int index = static_cast<int>(pollfds_.size())-1;
+        int index = static_cast<int>(pollfds_.size())-1;//重新计算索引，方便下次快速定位
         channel->set_index(index);
-        channels_[pfd.fd] = channel;
+        channels_[pfd.fd] = channel;//channels_是fd和channel的一个map
     }
     else{
         assert(channels_.find(channel->fd()) != channels_.end());
