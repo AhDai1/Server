@@ -22,11 +22,11 @@ public:
     bool listenning() const { return listenning_; }
     void listen();
 private:
-    void handleRead();
-    EventLoop *loop_;
-    Socket acceptSocket_;
-    Channel acceptChannel_;
-    NewConnectionCallback newConnectionCallback_;
+    void handleRead();//可读回调函数，绑定在acceptChannel_上
+    EventLoop *loop_;//所属的EventLoop上
+    Socket acceptSocket_;//listening socket
+    Channel acceptChannel_;//管理listening socket的Channel
+    NewConnectionCallback newConnectionCallback_;//连接回调函数
     bool listenning_;
 };
 

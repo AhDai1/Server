@@ -29,11 +29,11 @@ private:
     void newConnection(int sockfd,const InetAddress& peerAddr);
     void removeConnection(const TcpConnectionPtr& conn);
     void removeConnectionInLoop(const TcpConnectionPtr& conn);
-    typedef std::map<std::string, TcpConnectionPtr> ConnectionMap;
+    typedef std::map<std::string, TcpConnectionPtr> ConnectionMap;//连接与名字的映射
 
-    EventLoop* loop_;
+    EventLoop* loop_;//本TcpServer所在的事件循环
     const std::string name_;
-    boost::scoped_ptr<Acceptor> acceptor_;
+    boost::scoped_ptr<Acceptor> acceptor_;//不可转交的Acceptor
     boost::scoped_ptr<EventLoopThreadPool> threadPool_;
     ConnectionCallback connectionCallback_;
     MessageCallback messageCallback_;
