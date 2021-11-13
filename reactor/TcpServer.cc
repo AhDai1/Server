@@ -69,6 +69,7 @@ void TcpServer::removeConnectionInLoop(const TcpConnectionPtr& conn)
   size_t n = connections_.erase(conn->name());
   assert(n == 1); (void)n;
   EventLoop* ioLoop = conn->getLoop();
+  ////将TcpConnection的生命期长到调用connectDestroyed的时候
   ioLoop->queueInLoop(
       boost::bind(&TcpConnection::connectDestroyed, conn));
 }
